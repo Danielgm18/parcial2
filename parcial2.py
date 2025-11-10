@@ -38,14 +38,24 @@ def ejrcicio3():
     return resultado
 
 print("Elementos que están en la primera lista y no en la segunda:", ejrcicio3())
-'''
-#4.Desarrollar un algoritmo que calcule el promedio de un arreglo de reales 
 
-'''
+#4.Desarrollar un algoritmo que calcule el promedio de un arreglo de reales 
+def ejercicio4():
+  n = int(input("Ingrese la cantidad de números: "))
+  numeros = []
+
+  for i in range(n):
+      valor = float(input(f"Ingrese el número: "))
+      numeros.append(valor)
+
+  promedio = sum(numeros) / n
+  print("El promedio es:", promedio)
+
 def main():
      ejercicio1()
      ejercicio2()
      ejrcicio3()
+     ejercicio4()
 if __name__== __name__:
     main()
  
