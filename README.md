@@ -5,6 +5,9 @@
  <img width="342" height="33" alt="image" src="https://github.com/user-attachments/assets/588d6849-52a4-4117-a962-e50f53e8260a" />
 
 3.El programa funciona comparando los elementos de la lista1 y la lista2 y los elementos que no aparecen se muestran en la consola
+
 <img width="574" height="24" alt="image" src="https://github.com/user-attachments/assets/f216ee8e-9c6a-47ae-97f7-ec6cf8287905" />
 
+4. mediante una lista vacia se guardan los numeros y mediante sum se suman y despues se divide por el numero de datos
+   <img width="287" height="98" alt="image" src="https://github.com/user-attachments/assets/dcba0777-f52d-48be-a57f-360d5f198cdb" />
 
