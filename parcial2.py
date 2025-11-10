@@ -1,31 +1,51 @@
-#1.Desarrollar un programa que determine si en una lista no existen elementos repetidos
-lista=[1, 2, 3, 4, 5, 6, 6]
+
+#1.Desarrollar un programa que determine si en una lista no existen elementos repetidos.
+lista = [1, 2, 3, 4, 5, 6, 6]
 def ejercicio1():
-  for i in range(8):
-    if (lista[0:7:1])==(lista[1:7:1]):
-      print("Hay elementos repetidos")
-    else:
-      print("No hay elementos repetidos")
+    vistos = []  
+    for i in lista:
+        if i in vistos:   
+            print("Hay elementos repetidos")
+            return
+        vistos.append(i)  
+    print("No hay elementos repetidos")
+
 #2.Desarrollar un programa que determine si en una lista se encuentra una cadena de caracteres con 2 o mas vocales. 
 #Si en la cadena existe debe imprimirla y si no existe imprime no existe
-lista1=["Cali","Uno", "o"]
+lista = ["hola", "uno", "dos", "tres"]
 def ejercicio2():
-  for i in range(len(lista1)):
-    if lista1.count():
-        break
-print(lista1.values())
-'''
+    for palabra in lista:
+        contador = (
+            palabra.count("a") + palabra.count("e") +
+            palabra.count("i") + palabra.count("o") +
+            palabra.count("u") + palabra.count("A") +
+            palabra.count("E") + palabra.count("I") +
+            palabra.count("O") + palabra.count("U")
+        )
+        if contador >= 2:
+            print("La palabra con 2 o más vocales es:", palabra)
+            return
+    print("No existe")
+
 #3.Desarrollar un programa que dada 2 listas determine que elementos tiene la primera lista que no tenga la segunda lista 
-lista2=[1,2,3,5,7]
-lista3=[2,4,6,7,8]
+lista1 = [1, 2, 3, 4, 5]
+lista2 = [3, 4, 6]
+def ejrcicio3():
+    resultado = []
+    for elemento in lista1:
+        if elemento not in lista2:
+            resultado.append(elemento)
+    return resultado
 
-
-#4.DESAROLLAR UN ALGORITMO QUE CALCULE EL PROMEDIO DE UN ARREGLO DE REALES
-#def main():
-# #ejercicio1())
-#if __name__== __name__:
-  #main()
-
-if 1==1:
-  ejercicio1()
+print("Elementos que están en la primera lista y no en la segunda:", ejrcicio3())
 '''
+#4.Desarrollar un algoritmo que calcule el promedio de un arreglo de reales 
+
+'''
+def main():
+     ejercicio1()
+     ejercicio2()
+     ejrcicio3()
+if __name__== __name__:
+    main()
+ 
